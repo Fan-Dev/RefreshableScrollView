@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBatMan"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/iv_arrow"
+        android:text="松开即可加载更多养车服务"
+        android:textColor="#ffffff" />
+</RelativeLayout>

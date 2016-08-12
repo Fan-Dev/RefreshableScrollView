@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivBatMan"
+        android:layout_width="69dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/batman"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/ivSuperMan"
+        android:layout_width="74dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/superman" />
+
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ivBatMan"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bat_vs_supper" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBatMan"
+        android:layout_toRightOf="@+id/iv_arrow"
+        android:textColor="#ffffff" />
+</RelativeLayout>
