@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crrain.lib.refreshscrollview.FooterRefreshView;
-import com.crrain.lib.refreshscrollview.RefrshableScrollView;
+import com.crrain.lib.refreshscrollview.RefreshableScrollView;
 import com.crrain.refreshablescrollview.R;
 
 /**
@@ -47,7 +47,7 @@ public class MyFooterRefreshView extends FooterRefreshView {
      *开始上拉加载更多
      * @param scrollView
      */
-    public void onLoadMore(final RefrshableScrollView scrollView) {
+    public void onLoadMore(final RefreshableScrollView scrollView) {
         postDelayed(new Runnable() {
             @Override
             public void run() {

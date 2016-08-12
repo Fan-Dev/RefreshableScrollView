@@ -14,7 +14,7 @@ import android.widget.TextView;
 /**
  * 有弹性的ScrollView 实现下拉和上拉，支持自定义的顶部和底部视图
  */
-public class RefrshableScrollView extends ScrollView {
+public class RefreshableScrollView extends ScrollView {
 
     private static final String TAG          = "RefrshableScrollView";
 
@@ -81,11 +81,11 @@ public class RefrshableScrollView extends ScrollView {
         contentView.addView(footerRefreshView, lp);
     }
 
-    public RefrshableScrollView(Context context) {
+    public RefreshableScrollView(Context context) {
         super(context);
     }
 
-    public RefrshableScrollView(Context context, AttributeSet attrs) {
+    public RefreshableScrollView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -305,9 +305,9 @@ public class RefrshableScrollView extends ScrollView {
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     if (targetView instanceof FooterRefreshView) {
-                        ((FooterRefreshView) targetView).onLoadMore(RefrshableScrollView.this);
+                        ((FooterRefreshView) targetView).onLoadMore(RefreshableScrollView.this);
                     } else if (targetView instanceof HeaderRefreshView) {
-                        ((HeaderRefreshView) targetView).onRefresh(RefrshableScrollView.this);
+                        ((HeaderRefreshView) targetView).onRefresh(RefreshableScrollView.this);
                     }
                 }
 

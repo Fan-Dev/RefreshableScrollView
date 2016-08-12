@@ -23,5 +23,5 @@ public abstract class HeaderRefreshView extends RefreshLayout {
      * 开始下拉刷新
      * @param scrollView
      */
-    public abstract void onRefresh(RefrshableScrollView scrollView);
+    public abstract void onRefresh(RefreshableScrollView scrollView);
 }

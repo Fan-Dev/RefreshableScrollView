@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crrain.lib.refreshscrollview.HeaderRefreshView;
-import com.crrain.lib.refreshscrollview.RefrshableScrollView;
+import com.crrain.lib.refreshscrollview.RefreshableScrollView;
 import com.crrain.refreshablescrollview.R;
 
 /**
@@ -59,7 +59,7 @@ public class MyHeaderRefreshView extends HeaderRefreshView {
      * @param scrollView
      */
     @Override
-    public void onRefresh(final RefrshableScrollView scrollView) {
+    public void onRefresh(final RefreshableScrollView scrollView) {
         postDelayed(new Runnable() {
             @Override
             public void run() {

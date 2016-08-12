@@ -24,5 +24,5 @@ public abstract class FooterRefreshView extends RefreshLayout {
      *开始上拉加载更多
      * @param scrollView
      */
-    public abstract void onLoadMore(RefrshableScrollView scrollView);
+    public abstract void onLoadMore(RefreshableScrollView scrollView);
 }
